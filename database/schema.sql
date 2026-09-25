@@ -1,0 +1,3 @@
+-- Placeholder schema file.
+-- Define the production table structure only after inspecting the real dataset.
+-- Do not hard-code table columns based on assumptions.

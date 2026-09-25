@@ -1,0 +1,3 @@
+-- Initialize the PostgreSQL database for the project.
+-- The final schema will be defined after the dataset is reviewed.
+-- Keep this file intentionally generic until the actual data contract is known.
