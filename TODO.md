@@ -15,10 +15,10 @@
 - [x] Understand the actual data content before preprocessing
 - [x] Document dataset fields and their meaning
 - [x] Create a data cleaning pipeline for text fields
-- [ ] Remove or fill invalid values
-- [ ] Combine relevant text columns into one feature field
-- [ ] Clean text content (lowercase, remove HTML, URLs, punctuation, numbers)
-- [ ] Remove empty records after preprocessing
+- [x] Remove or fill invalid values
+- [x] Combine relevant text columns into one feature field
+- [x] Clean text content (lowercase, remove HTML, URLs, punctuation, numbers)
+- [x] Remove empty records after preprocessing
 
 ## Exploratory Data Analysis
 - [ ] Visualize missing value distribution

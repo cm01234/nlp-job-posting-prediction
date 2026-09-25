@@ -128,6 +128,14 @@ python -m src.inspect_dataset
 
 Use `--data-path` to inspect another CSV and `--target-column` to select a different label column.
 
+To validate required posting fields, remove invalid rows and duplicate IDs, and fill optional values before preprocessing, run:
+
+```bash
+python -m src.clean_data
+```
+
+The cleaned CSV is written to `data/processed/clean_job_postings.csv` by default. It retains the source fields, adds `combined_text` (selected posting fields joined together) and `clean_text` (the normalized model text), and removes rows whose text is empty after preprocessing. The raw input is never overwritten; the script rejects identical input and output paths. Use `--data-path` or `--output-path` to override either path.
+
 ## Typical Workflow
 
 1. Load dataset from CSV or PostgreSQL.

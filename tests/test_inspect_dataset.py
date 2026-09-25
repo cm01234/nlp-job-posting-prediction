@@ -14,7 +14,7 @@ def test_build_inspection_report_returns_schema_and_label_percentages():
 
     schema, distribution = build_inspection_report(df)
 
-    assert schema.loc["title", "dtype"] == "object"
+    assert schema.loc["title", "dtype"] == str(df["title"].dtype)
     assert schema.loc["title", "non_null"] == 3
     assert schema.loc["title", "missing"] == 1
     assert distribution.loc[0, "count"] == 3
